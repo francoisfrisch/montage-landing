@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- <copyright>
+Copyright (c) 2012, Motorola Mobility LLC.
+All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of Motorola Mobility LLC nor the names of its
+  contributors may be used to endorse or promote products derived from this
+  software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+</copyright> -->
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="themes.css">
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "prototype": "ui/themes.reel",
+                "properties": {
+                    "element": {
+                        "#": "component"
+                    }
+                }
+            },
+            "skeleton1": {
+                "prototype": "montage/ui/button.reel",
+                "properties": {
+                    "element": {"#": "skeleton1"}
+                }
+            },
+            "skeleton2": {
+                "prototype": "montage/ui/input-range.reel",
+                "properties": {
+                    "element": {"#": "skeleton2"}
+                }
+            },
+            "skeleton3": {
+                "prototype": "montage/ui/progress.reel",
+                "properties": {
+                    "element": {"#": "skeleton3"}
+                }
+            },
+
+
+            "fancypants1": {
+                "prototype": "montage/ui/button.reel",
+                "properties": {
+                    "element": {"#": "fancypants1"}
+                }
+            },
+            "fancypants2": {
+                "prototype": "montage/ui/input-range.reel",
+                "properties": {
+                    "element": {"#": "fancypants2"}
+                }
+            },
+            "fancypants3": {
+                "prototype": "montage/ui/progress.reel",
+                "properties": {
+                    "element": {"#": "fancypants3"}
+                }
+            },
+
+
+
+            "metal1": {
+                "prototype": "montage/ui/button.reel",
+                "properties": {
+                    "element": {"#": "metal1"}
+                }
+            },
+            "metal2": {
+                "prototype": "montage/ui/input-range.reel",
+                "properties": {
+                    "element": {"#": "metal2"}
+                }
+            },
+            "metal3": {
+                "prototype": "montage/ui/progress.reel",
+                "properties": {
+                    "element": {"#": "metal3"}
+                }
+            },
+
+
+
+            "bluemoon1": {
+                "prototype": "montage/ui/bluemoon/toggle.reel",
+                "properties": {
+                    "element": {"#": "bluemoon1"}
+                }
+            },
+            "bluemoon2": {
+                "prototype": "montage/ui/bluemoon/slider.reel",
+                "properties": {
+                    "element": {"#": "bluemoon2"}
+                }
+            },
+            "bluemoon3": {
+                "prototype": "montage/ui/bluemoon/slider.reel",
+                "properties": {
+                    "element": {"#": "bluemoon3"},
+                    "value": "50"
+                }
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+    <section id="themes" data-montage-id="component">
+        <article>
+            <div class="cols">
+                <div class="col col-1-3">
+                    <img class="logo" src="/montage-landing/assets/images/logo-skeleton.png" alt="Skeleton logo" />
+                </div>
+                <div class="col col-2-3">
+                    <h3 class="title">Themes</h3>
+                    <p>Montage comes with the <strong>Skeleton</strong> theme. It's a basic, neutral-looking theme for HTML5 controls and inputs. It can be used as wireframe theme for prototyping, easily be styled with CSS to create custom <strong>Skins</strong> or it can be used as a starting point for creating your own themes. It also aims to provide cross-browser support so it can serve as a fallback theme.</p>
+                    <nav class="more">See more: <a class="more-button" href="http://tetsubo.org/mot/master/montage/lab/skeleton/overview/index.html" target="_blank">Skeleton Overview</a></nav>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <h4>Skeleton</h4>
+                    <button data-montage-id="skeleton1">Button</button>
+                    <input data-montage-id="skeleton2" type="range" value="50" min="0" max="100" />
+                    <div data-montage-id="skeleton3" value="40" max="100"></div>
+                </li>
+                <li class="skinA">
+                    <h4>Skeleton <span class="hl">+ Skin A</span></h4>
+                    <button data-montage-id="fancypants1">Button</button>
+                    <input data-montage-id="fancypants2" type="range" value="50" min="0" max="100" />
+                    <div data-montage-id="fancypants3" value="40" max="100"></div>
+                </li>
+                <li class="skinB">
+                    <h4>Skeleton <span class="hl">+ Skin B</span></h4>
+                    <button data-montage-id="metal1">Button</button>
+                    <input data-montage-id="metal2" type="range" value="50" min="0" max="100" />
+                    <div data-montage-id="metal3" value="40" max="100"></div>
+                </li>
+                <li class="BlueMoon">
+                    <h4>BlueMoon</h4>
+                    <div data-montage-id="bluemoon1"></div>
+                    <div data-montage-id="bluemoon2"></div>
+                    <div data-montage-id="bluemoon3"></div>
+                </li>
+            </ul>
+        </article>
+    </section>
+</body>
+</html>

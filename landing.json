@@ -1,0 +1,44 @@
+{
+    "examples": {
+        "prototype": "ui/examples.reel",
+        "properties": {
+            "element": {"#": "examples"}
+        }
+    },
+    "themes": {
+        "prototype": "ui/themes.reel",
+        "properties": {
+            "element": {"#": "themes"}
+        }
+    },
+    "misc": {
+        "prototype": "ui/misc.reel",
+        "properties": {
+            "element": {"#": "misc"}
+        }
+    },
+    "apps": {
+        "prototype": "ui/apps.reel",
+        "properties": {
+            "element": {"#": "apps"}
+        }
+    },
+    "tools": {
+        "prototype": "ui/tools.reel",
+        "properties": {
+            "element": {"#": "tools"}
+        }
+    },
+    "team": {
+        "prototype": "ui/team.reel",
+        "properties": {
+            "element": {"#": "team"}
+        }
+    },
+    "future": {
+        "prototype": "ui/future.reel",
+        "properties": {
+            "element": {"#": "future"}
+        }
+    }
+}
