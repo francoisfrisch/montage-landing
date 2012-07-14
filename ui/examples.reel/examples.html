@@ -41,44 +41,43 @@ POSSIBILITY OF SUCH DAMAGE.
                     "element": {
                         "#": "component"
                     }
-                },
-
-                "number": {
-                    "prototype": "montage/ui/input-number.reel",
-                    "properties": {
-                        "element": {"#": "number"}
-                    }
-                },
-
-                "range": {
-                    "prototype": "montage/ui/input-range.reel",
-                    "properties": {
-                        "element": {"#": "range"}
-                    },
-                    "bindings": {
-                        "value": {"<->": "@number.value"}
-                    }
-                },
-
-                "numberValue": {
-                    "prototype": "montage/ui/dynamic-text.reel",
-                    "properties": {
-                        "element": {"#": "numberValue"}
-                    },
-                    "bindings": {
-                        "value": {"<-": "@number.value"}
-                    }
-                },
-                "rangeValue": {
-                    "prototype": "montage/ui/dynamic-text.reel",
-                    "properties": {
-                        "element": {"#": "rangeValue"}
-                    },
-                    "bindings": {
-                        "value": {"<-": "@number.value"}
-                    }
                 }
+            },
 
+            "number": {
+                "prototype": "montage/ui/input-number.reel",
+                "properties": {
+                    "element": {"#": "number"}
+                }
+            },
+
+            "range": {
+                "prototype": "montage/ui/input-range.reel",
+                "properties": {
+                    "element": {"#": "range"}
+                },
+                "bindings": {
+                    "value": {"<->": "@number.value"}
+                }
+            },
+
+            "numberValue": {
+                "prototype": "montage/ui/dynamic-text.reel",
+                "properties": {
+                    "element": {"#": "numberValue"}
+                },
+                "bindings": {
+                    "value": {"<-": "@number.value"}
+                }
+            },
+            "rangeValue": {
+                "prototype": "montage/ui/dynamic-text.reel",
+                "properties": {
+                    "element": {"#": "rangeValue"}
+                },
+                "bindings": {
+                    "value": {"<-": "@number.value"}
+                }
             }
         }
     </script>
@@ -103,23 +102,23 @@ POSSIBILITY OF SUCH DAMAGE.
 
 
             <div class="block markup">
-<pre>
-&lt;input data-montage-id="<span class="hl-number">number</span>" type="number" min="0" max="100" value="<span data-montage-id="numberValue" class="hl-value">0</span>" /&gt;
-&lt;input data-montage-id="<span class="hl-range">range</span>" type="range" min="0" max="100" value="<span data-montage-id="rangeValue" class="hl-value">0</span>" /&gt;
-</pre>
-        </div>
-        <div class="block serialization">
-<pre>
-"number": {
-"prototype": "montage/ui/input-number.reel",
-"properties": { "element": {"#": "<span class="hl-number">number</span>"} }
-},
-"range": {
-"prototype": "montage/ui/input-range.reel",
-"properties": { "element": {"#": "<span class="hl-range">range</span>"} },
-<span class="hl-bindings">"bindings": { "value": {"<->": "@number.value"} }</span>
-}
-</pre>
+                <pre>
+                &lt;input data-montage-id="<span class="hl-number">number</span>" type="number" min="0" max="100" value="<span data-montage-id="numberValue" class="hl-value">0</span>" /&gt;
+                &lt;input data-montage-id="<span class="hl-range">range</span>" type="range" min="0" max="100" value="<span data-montage-id="rangeValue" class="hl-value">0</span>" /&gt;
+                </pre>
+            </div>
+            <div class="block serialization">
+                <pre>
+                "number": {
+                "prototype": "montage/ui/input-number.reel",
+                "properties": { "element": {"#": "<span class="hl-number">number</span>"} }
+                },
+                "range": {
+                "prototype": "montage/ui/input-range.reel",
+                "properties": { "element": {"#": "<span class="hl-range">range</span>"} },
+                <span class="hl-bindings">"bindings": { "value": {"<->": "@number.value"} }</span>
+                }
+                </pre>
             </div>
 
             <nav class="more">Learn more:
