@@ -69,17 +69,3 @@
     font-size: 14px;
 }
 
-@media all and (max-width: 800px) {
-    .gallery-item {
-        display: block;
-        margin: 0;
-    }
-    .gallery-img {
-        max-width: 100%;
-        max-height: 200px;
-    }
-    .gallery-description {
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
-}
