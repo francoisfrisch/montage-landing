@@ -67,7 +67,10 @@ POSSIBILITY OF SUCH DAMAGE.
                     "element": {"#": "numberValue"}
                 },
                 "bindings": {
-                    "value": {"<-": "@number.value"}
+                    "value": {
+                        "<-": "@number.value",
+                        "converter": {"@": "owner"}
+                    }
                 }
             },
             "rangeValue": {
@@ -76,7 +79,10 @@ POSSIBILITY OF SUCH DAMAGE.
                     "element": {"#": "rangeValue"}
                 },
                 "bindings": {
-                    "value": {"<-": "@number.value"}
+                    "value": {
+                        "<-": "@number.value",
+                        "converter": {"@": "owner"}                         
+                    }
                 }
             }
         }

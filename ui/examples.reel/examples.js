@@ -45,6 +45,12 @@ exports.Examples = Montage.create(Component, /** @lends module:"montage/ui/examp
 
     hasTemplate: {
         value: true
+    },
+
+    convert: {
+      value:function(v) {
+        return Number(Math.round(v)).toString()
+      }
     }
 
 });
