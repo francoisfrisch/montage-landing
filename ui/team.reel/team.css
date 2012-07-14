@@ -1,6 +1,6 @@
 /* Team ----------------------------------------- */
 
-#team img {
+.landing #team img {
     width: 44px;
     height: 44px;
     border-radius: 4px;

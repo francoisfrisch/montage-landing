@@ -359,7 +359,6 @@ font-weight: bold;}
 
     }
 
-    #page-main { padding-top: 2.3rem; }
     body.fixed_width, body.buddypress {
         background-color: #444;
         background: url(http://tetsubo.org/wp-content/uploads/images/noise.png), -webkit-radial-gradient(50% -80%, hsl(0,0%,50%), hsl(0,0%,20%));
@@ -860,13 +859,10 @@ h2.notfound-splash {
 
     <script type="text/javascript"> jQuery(document).ready( function() { jQuery("a.confirm").click( function() { if ( confirm( 'Are you sure?' ) ) return true; else return false; }); });</script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <link rel="stylesheet" href="/montage-landing/assets/styles/base.css">
     <link rel="stylesheet" href="/montage-landing/assets/styles/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="/montage-landing/assets/styles/landing.css">
     <link rel="stylesheet" href="/montage-landing/assets/styles/skin-a.css">
     <link rel="stylesheet" href="/montage-landing/assets/styles/skin-b.css">
-    <link rel="stylesheet" href="/montage-landing/assets/styles/landing.css">
 
     <script src="/mot/montage/montage.js" data-package="/montage-landing"></script>
     <link rel="serialization" type="text/montage-serialization" href="/montage-landing/index.json">
@@ -991,7 +987,7 @@ h2.notfound-splash {
             </div>
                         <div id="page-main" class="container-group fix"> <!-- #page-main // closed in footer -->
                 <div id="dynamic-content" class="outline fix">
-                        <div id="landing" data-montage-id="app">
+                        <div id="landing" class="landing" data-montage-id="app">
         <header class="pushed">
             <h1><img class="logo" src="/montage-landing/assets/images/logo-montage.png" alt="Montage" /></h1>
             <h2 class="tagline">An <strong class="highlight">HTML5 framework</strong> for building modern Web Apps.</h2>
@@ -1011,7 +1007,7 @@ h2.notfound-splash {
                         <p>The aim of Montage is to allow you to develop rich HTML5 applications that use JavaScript both on the front-end via the browser, and back-end via Node.js. You can build rich UIs in the client, and use a service-oriented back-end to handle data persistence and server-side logic. All using one language, and with the ability to have code reuse throughout the full stack. Montage opens a new world of opportunity for web developers.</p>
 
                     </div>
-                    <aside class="col col-1-3">
+                    <div class="col col-1-3">
                         <p>Some features</p>
                         <ul>
                             <li>Components and HTML templates</li>
@@ -1020,7 +1016,7 @@ h2.notfound-splash {
                             <li>Serialization</li>
                             <li>Event Management</li>
                         </ul>
-                    </aside>
+                    </div>
                 </div>
                 <nav class="more">Learn more: <a class="more-button" href="http://tetsubo.org/home/montage/why/" target="_blank">Why use Montage?</a></nav>
             </article>

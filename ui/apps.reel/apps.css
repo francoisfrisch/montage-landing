@@ -23,10 +23,10 @@
     margin: 20px;
 }
 
-.gallery-item a {
+#apps .gallery-item a {
     color: hsl(0,0%,50%);
 }
-.gallery-item a:hover {
+#apps .gallery-item a:hover {
     color: hsl(200,100%,50%);
 }
 

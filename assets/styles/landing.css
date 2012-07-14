@@ -1,6 +1,25 @@
-/* @override http://localhost:8082/gh-pages/ui/main.reel/main.css */
+/* @override http://localhost:8082/montage-landing/assets/styles/landing.css */
 
 /* Globals ----------------------------------------- */
+
+.landing {
+    margin: 0;
+    color: hsl(0,0%,25%);
+    font: 13px/1.231 'Open Sans', sans-serif;
+	background-color: hsl(200,0%,90%);
+}
+
+.landing a {
+    text-decoration: none;
+    color: hsl(220,80%,50%);
+}
+.landing a:hover {
+    color: hsl(220,80%,60%);
+}
+.landing a:active {
+    color: hsl(220,80%,40%);
+}
+
 
 .pushed {
     padding: 50px;
@@ -45,7 +64,7 @@ article {
     text-shadow: 0px 1px 0px hsla(0,0%,100%,.8);
 }
 
-.title {
+#landing .title {
     font-size: 24px;
     margin: 0;
 }
@@ -67,7 +86,7 @@ article {
     margin-top: 20px;
 }
 
-.more-button {
+.landing .more-button {
     display: inline-block;
     margin-left: 10px;
     padding: 0 15px;
@@ -78,18 +97,18 @@ article {
     color: hsl(0,0%,15%);
     border: 1px dashed hsl(0,0%,70%);
 }
-.more-button:hover {
+.landing .more-button:hover {
     color: hsl(0,0%,15%);
     background-color: hsl(0,0%,95%);
 }
-.more-button:active {
+.landing .more-button:active {
     color: hsl(0,0%,15%);
     background-color: hsl(0,0%,86%);
 }
 
 @media all and (max-width: 800px) {
 
-    .more-button {
+    .landing .more-button {
         margin-top: 10px;
     }
 
