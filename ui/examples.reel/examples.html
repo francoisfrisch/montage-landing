@@ -48,16 +48,19 @@ POSSIBILITY OF SUCH DAMAGE.
                 "prototype": "montage/ui/input-number.reel",
                 "properties": {
                     "element": {"#": "number"}
-                }
+                },
+                "bindings": {
+                    "value": {
+                        "<->": "@range.value",
+                        "converter": {"@": "owner"}
+                    }
+                }                
             },
 
             "range": {
                 "prototype": "montage/ui/bluemoon/slider.reel",
                 "properties": {
                     "element": {"#": "range"}
-                },
-                "bindings": {
-                    "value": {"<->": "@number.value"}
                 }
             },
 
